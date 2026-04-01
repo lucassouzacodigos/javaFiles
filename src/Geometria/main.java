@@ -16,9 +16,11 @@ public class main {
         Circulo bola = new Circulo("bola", 5);
         Quadrado square = new Quadrado ("bloco", 15);
         
-        System.out.println(bola.exibirInfo());
-        System.out.println(retangulo.exibirInfo());
-        System.out.println(square.exibirInfo());
+        Forma formas[] = {retangulo, bola, square};
+        
+        for (int i=0;i<formas.length;i++){
+            System.out.println(formas[i].exibirInfo());
+        }
         
         
         
