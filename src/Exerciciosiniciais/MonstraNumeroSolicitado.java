@@ -11,23 +11,17 @@ import java.util.Scanner;
  */
 public class MonstraNumeroSolicitado {
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in); 
-//        System.out.println("Informe sua idade: ");
-//        int idade = sc.nextInt();
-//        System.out.println("Sua idade é :" + idade);
         
-        ContaBancaria conta = new ContaBancaria(100, "Kawan");
-        System.out.println("A conta pertence a: " + conta.getNome());
-        System.out.println("O saldo da conta é: " + conta.getSaldo());
         
-        conta.depositar(20);
-        System.out.println("O saldo da conta é: " + conta.getSaldo());
+        Funcionarios lucas = new Funcionarios("Lucas", 500);
+        System.out.println(lucas.exibirInfo());
         
-        conta.sacar(50);
-        System.out.println("O saldo da conta é: " + conta.getSaldo());
         
-        conta.setNome("Lucas Braga");
-        System.out.println("A Conta pertence a: " + conta.getNome());
+        Gerente kevin = new Gerente("kevin", 1000, 100);
+        System.out.println(kevin.exibirInfo());
+        
+        Estagiario Wallace = new Estagiario("Wallace", 2000, 50);
+        System.out.println(Wallace.exibirInfo());
 
         }
     }

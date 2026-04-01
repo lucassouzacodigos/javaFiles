@@ -8,6 +8,17 @@ package Exerciciosiniciais;
  *
  * @author aluno
  */
-public class Gerente {
+public class Gerente extends Funcionarios{
     
+    private double bonus;
+    
+    public Gerente(String name, double salario, double bonus){
+        super(name, salario);
+        this.bonus = bonus;
+    }
+    
+    @Override
+    public String exibirInfo(){
+        return ("Nome: " + this.getName() + " Salario: " +   this.getSalario() + " Bonus: " +  this.bonus).toString();
+    }
 }
