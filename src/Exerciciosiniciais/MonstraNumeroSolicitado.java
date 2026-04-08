@@ -17,12 +17,23 @@ public class MonstraNumeroSolicitado {
         System.out.println(lucas.exibirInfo());
         
         
+        
         Gerente kevin = new Gerente("kevin", 1000, 100);
         System.out.println(kevin.exibirInfo());
         
         Estagiario Wallace = new Estagiario("Wallace", 2000, 50);
         System.out.println(Wallace.exibirInfo());
 
+//        ContaBancaria lucas =  new ContaBancaria(500, "Lucas");
+//        System.out.println("nome do titular: " + lucas.getNome());
+//        System.out.println("Saldo: " + lucas.getSaldo());
+//        lucas.depositar(500);
+//        System.out.println(" ++ Deposito de R$: 500");
+//        System.out.println("Saldo apos deposito: " + lucas.getSaldo());
+//        lucas.setNome("Lucas Braga");
+//        System.out.println("Nome apos troca: " + lucas.getNome());
+
+        
         }
     }
 
